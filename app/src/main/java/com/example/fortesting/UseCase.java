@@ -9,6 +9,8 @@ public class UseCase {
     @Inject
     Repo repo;
 
+    @Inject public UseCase(){ }
+
     public void getText() {
         repo.repoText();
     }
